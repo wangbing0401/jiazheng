@@ -6,7 +6,7 @@
       <button @click="decrement">-</button>
     </p>
 
-    <a href="/pages/index/main" class="home">去往首页</a>
+    <a @click="back()" class="home">去往首页</a>
   </div>
 </template>
 
@@ -26,6 +26,9 @@ export default {
     },
     decrement () {
       store.commit('decrement')
+    },
+    back () {
+      wx.navigateBack()
     }
   }
 }
