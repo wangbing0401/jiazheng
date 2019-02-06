@@ -6,7 +6,7 @@
       <button @click="decrement">-</button>
     </p>
 
-    <a @click="back()" class="home">去往首页</a>
+    <i-button @click="back()"size="small" type="primary">去往首页</i-button>
   </div>
 </template>
 
