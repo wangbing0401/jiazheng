@@ -48,6 +48,18 @@ export default {
     }
   },
   created () {
+    wx.checkSession({
+      success (res1) {
+        console.log('1111111111', res1)
+      },
+      fail () {
+        wx.login({
+          success (res2) {
+            console.log('=============', res2)
+          }
+        })
+      }
+    })
   }
 }
 </script>
