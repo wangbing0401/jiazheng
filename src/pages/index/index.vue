@@ -50,7 +50,7 @@ export default {
   created () {
     wx.checkSession({
       success (res1) {
-        console.log('1111111111', res1)
+        console.log('11111111111111', res1)
       },
       fail () {
         wx.login({
